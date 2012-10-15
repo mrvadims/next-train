@@ -2,8 +2,8 @@
   var url = 'http://as0.mta.info/mnr/schedules/sched_results.cfm?n=y';
   var currentTime = new Date();
   var params = {
-    'orig_id' : 1,
-    'dest_id' : 23,
+    'orig_id' : 1, // Grand Central
+    'dest_id' : 23, // Dobbs Ferry
     'Filter_id' : 1,
     'traveldate' : getDate(currentTime),
     'Time_id' : getTime(currentTime),

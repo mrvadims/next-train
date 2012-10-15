@@ -1,9 +1,9 @@
-(function() {
+function next-train(destStation) {
   var url = 'http://as0.mta.info/mnr/schedules/sched_results.cfm?n=y';
   var currentTime = new Date();
   var params = {
     'orig_id' : 1, // Grand Central
-    'dest_id' : 23, // Dobbs Ferry
+    'dest_id' : destStation, 
     'Filter_id' : 1,
     'traveldate' : getDate(currentTime),
     'Time_id' : getTime(currentTime),
@@ -12,6 +12,8 @@
   };
 
   post_to_url(url, params, 'post');
+  
+}
 
   function getDate(currentTime) {
     var month = currentTime.getMonth() + 1;

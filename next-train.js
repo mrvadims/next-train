@@ -1,5 +1,5 @@
 function nextTrain(destStation) {
-  var url = 'http://as0.mta.info/mnr/schedules/sched_results.cfm?n=y';
+  var url = 'https://as0.mta.info/mnr/schedules/sched_results.cfm?n=y';
   var currentTime = new Date();
   var params = {
     'orig_id' : 1, // Grand Central

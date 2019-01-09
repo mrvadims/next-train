@@ -2,6 +2,10 @@ function nextTrain(destStation) {
   var url = 'https://as0.mta.info/mnr/schedules/sched_results.cfm?n=y';
   var currentTime = new Date();
   var params = {
+    'orig_station' : 1, // Grand Central
+    'dest_station' : destStation,
+    'orig_station_name' : 'Grand+Central+Terminal', // Grand Central
+    'dest_station_name' : 'SCARSDALE', // Grand Central
     'orig_id' : 1, // Grand Central
     'dest_id' : destStation,
     'Filter_id' : 1,
